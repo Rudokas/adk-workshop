@@ -36,7 +36,9 @@ This will create a virtual environment and install all required dependencies inc
 Set up your environment variables by creating a `.env` file in the `x/` directory:
 
 ```bash
-ADK_API_KEY=your_adventure_game_api_key_here
+GOOGLE_GENAI_USE_VERTEXAI=0
+GOOGLE_API_KEY=very_secret_key_value
+ADK_API_KEY=another_very_secret_key_value
 ```
 
 The agent uses this API key to authenticate with the adventure game API at `https://adventure.wietsevenema.eu/`.
