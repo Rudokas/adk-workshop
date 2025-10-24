@@ -37,11 +37,18 @@ Set up your environment variables by creating a `.env` file in the `x/` director
 
 ```bash
 GOOGLE_GENAI_USE_VERTEXAI=0
-GOOGLE_API_KEY=very_secret_key_value
+GOOGLE_API_KEY=found_at_google_console_apis_credentials
 ADK_API_KEY=another_very_secret_key_value
 ```
 
-The agent uses this API key to authenticate with the adventure game API at `https://adventure.wietsevenema.eu/`.
+Run these commands to authenticate to google cloud
+
+```bash
+gcloud auth login
+gcloud config set project gemini-test 
+```
+
+The agent uses this API key to authenticate with the adventure game API at `https://adventure.wietsevenema.eu/`. Dont forget to start the level
 
 ## Usage
 
